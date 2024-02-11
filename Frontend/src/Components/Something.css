@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .form-container {
+    background-color: #fff;
+    border-radius: 10px; 
+  box-shadow: 0px 0px 10px 0px white;
+    padding: 20px;
+    width: 1200px;
+  }
+
+  .form-container label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-container button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .form-container button:hover {
+    background-color: #45a049;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 9vh;
+    left: 7vw;
+  }
+  
+  .input {
+    min-height: 50px;
+    max-width: 250px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+  }
+  
+  .button--submit {
+    min-height: 50px;
+    max-width: 78px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #5e4dcd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button--submit:hover {
+    background-color: #5e5dcd;
+  }
+  
+  .input:focus, .input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+  }
+  
+  .addRecipeBtn{
+    width: 16vw;
+    height: 8vh;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 32px;
+    text-align: center;
+    background-color: #00CC00;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: none;
+  }
+
+  .recipeCardOuter{
+    /* display: flex; */
+    margin-top: 100vh;
+
+  }
+
+  
+  .recipeCard{
+    width: 25vw;
+    height: 35vh;
+    background-color: #5e4dcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* .recipeCard:hover{
+    border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #61615e;
+  width: 40vw;
+    height: 70vh;
+    position: inherit;
+  } */
+
+  .recipeCard:hover .recipeDescription{
+    /* display: block; */
+  }
+  
+  .backgroundimg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../images/top-view-fresh-vegetables-various-spices-small-bowls-wooden-spoons-table-free-space.jpg');
+    background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+    z-index: -1;
+  }
+
+  .submit-btn{
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  box-shadow: 0px 0px 10px 0px green, 0px 0px 10px 0px;
+  background-color: black;
+  
+  }
+
+  .recipeDescription{
+    display: none;
+  }

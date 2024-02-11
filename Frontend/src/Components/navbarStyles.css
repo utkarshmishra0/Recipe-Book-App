@@ -1,0 +1,27 @@
+.navbar{
+    width: 100vw;
+    height: 7vh;
+    background-color: #5E4dcd;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    margin-right: 7vw;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 1.5vh 1.5vw;
+    color: white;
+}
+
+.navbar ul li:hover{
+    color: #000000;
+}
